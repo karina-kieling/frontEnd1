@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2? family= Roboto & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container_grid {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #1E1C21;
+    height: 80px;
+}
+
+.cabecalho_alinhamento {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.menu{
+    display: flex;
+    width: 658px;
+    justify-content: space-between;
+}
+
+.menu a{
+    font-family: 'Roboto', sans-serif;
+    color:#ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.menu a:hover{
+    scale: 1.1;
+}
+
+.banner{
+    background-image: url(../img/ImagemBanner.png);
+    height: 600px;
+    background-size: cover ;
+}
+
+.posicao_texto{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+.texto_banner{
+    color: #ffffff;
+    text-align: center;
+}
+
+.texto_banner span{
+    font-size: 80px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.texto_banner p{
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 80px;
+}
+
+.texto_banner a{
+    color: #ffffff;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color:#C31616;
+    padding: 15px 32px;
+    border-radius: 10px;
+}
+
+.barra_jogos{
+    background-color: #000000;
+    height: 121px;
+    align-items: center;
+}
+
+.imagem_jogo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
