@@ -144,19 +144,75 @@ h2{
 
 .secao_cards{
     display: flex;
-    flex-wrap: wrap;~
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
 .card{
     width:215px;
     margin: 20px;
+    box-shadow: 0 0 10px #C31616;
+    background: linear-gradient(180deg, #000000 0%, rgba(83, 83, 83, 0.577381) 25%, rgba(196, 196, 196, 0) 87.5%);
+    color: #ffffff;
+    padding-bottom: 10px;
+}
+
+.card a{
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    padding: 7px 38px;
+    margin: 15px;
+    background-color:#C31616;
+    border-radius: 10px; 
+}
+
+.card *:not(:first-child){
+    margin: 5px 10px;
 }
 
 
 
 
+footer{
+    background-color: #010101;
+}
 
+.rodape{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+
+.links_footer{
+    display: flex;
+    color: #ffffff;
+}
+
+.links_footer a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+footer .box_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box_logo .logo{
+    height: 30px;
+    width: 282px;
+}
+
+.info_contato{
+    color: #ffffff;
+}
 
 @media screen and (max-width: 1200px) {
     .logo{
@@ -175,8 +231,26 @@ h2{
     
 }
 @media screen and (max-width: 768px) {
+    .cabecalho_alinhamento{
+        position: relative;
+    }
+    
     .menu{
         display: none;
+        flex-direction: column;
+        width: 150px;
+        position: absolute;
+        right: 0;
+        top: 70px;
+        background-color: #000000dd;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0px opx 20px #000000;
+    }
+
+    .menu a{
+        margin: 5px;
+        text-align: end;
     }
     .barras{
         display: flex;
