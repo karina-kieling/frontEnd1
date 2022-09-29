@@ -18,6 +18,13 @@ h1{
     display: none;
 }
 
+
+
+
+
+
+
+
 header{
     background-color: #1E1C21;
     height: 80px;
@@ -57,6 +64,11 @@ header{
     fill: #ffffff;
 }
 
+.menu-jquery-escondido {
+    display: none;
+}
+
+
 
 
 
@@ -64,10 +76,22 @@ header{
 
 
 .banner{
-    background-image: url(../img/ImagemBanner.png);
+    
     height: 600px;
     background-size: cover ;
 }
+
+.banner-f1{
+    background-image: url(../img/ImagemBanner.png);
+}
+ .banner-cs{
+    background-image: url(../img/banner_cs.png);
+ }
+
+ .banner-lol{
+    background-image: url(../img/banner_lol.png);
+ }
+
 
 .posicao_texto{
     display: flex;
@@ -99,9 +123,13 @@ header{
     text-transform: uppercase;
     text-decoration: none;
     background-color:#C31616;
-    padding: 15px 32px;
+    padding: 12px 32px;
     border-radius: 10px;
 }
+
+
+
+
 
 
 
@@ -133,6 +161,11 @@ header{
 
 
 
+
+
+
+
+
 .ofertas{
     background-color:#1E1C21;
     padding: 30px 0;
@@ -151,7 +184,7 @@ h2{
 .card{
     width:215px;
     margin: 20px;
-    box-shadow: 0 0 10px #C31616;
+    box-shadow: 0 0 20px #C31616;
     background: linear-gradient(180deg, #000000 0%, rgba(83, 83, 83, 0.577381) 25%, rgba(196, 196, 196, 0) 87.5%);
     color: #ffffff;
     padding-bottom: 10px;
@@ -175,13 +208,56 @@ h2{
 
 
 
+
+
+
+
+.section_ligas{
+    background-image: url(../img/FundoLigas.png);
+    background-size: 100vw 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family:'Roboto', sans-serif;
+}
+
+.box_ligas{
+    display: flex;
+    color:white;
+}
+
+.box_ligas img{
+    margin-left: 5%;
+    height: 95%;
+}
+
+.liga_texto{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+
+.liga_texto h2{
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
 footer{
     background-color: #010101;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 .rodape{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 50px 0;
 
 }
 
@@ -189,18 +265,21 @@ footer{
 
 .links_footer{
     display: flex;
+    flex: 1;
     color: #ffffff;
+    justify-content: space-around;
 }
 
 .links_footer a{
     color: #ffffff;
     text-decoration: none;
     font-size: 14px;
-    font-family: 'Titillium Web', sans-serif;
+    
 }
 
 footer .box_logo{
     display: flex;
+    flex: 1;
     justify-content: center;
     align-items: center;
 }
@@ -212,6 +291,34 @@ footer .box_logo{
 
 .info_contato{
     color: #ffffff;
+    flex: 1;
+}
+
+.info_contato form *{
+    border: none;
+    padding: 2px 12px;
+    font-size: 24px;
+}
+
+.info_contato input{
+    width: 60%;
+    color: #001f70;
+    border-radius: 10px;
+}
+
+.info_contato button{
+    background-color: #001f70;
+    color:#ffffff
+}
+
+.siga-nos{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.siga-nos img{
+    margin: 10px;
 }
 
 @media screen and (max-width: 1200px) {

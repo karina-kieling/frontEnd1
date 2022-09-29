@@ -4,34 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-players</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="js/jquery-3.6.1.js" defer></script>
+    <script src="./js/script.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous" defer></script>
 </head>
-<body>
-    <h1>Home E-players</h1>
-   <HEader>
+
+<body onload="renderizarProdutos()">
+    <h1>Home - E-players</h1>
+    <HEader>
         <div class="container_grid cabecalho_alinhamento">
-            <a href="">
+            <a href="#">
                 <img class="logo" src="./img/Logo 1 (1).png" alt="Logo do site E-players">
             </a>
             <nav id="menu" class="menu">
-                <a href="">Inicio</a>
-                <a href="">Horários</a>
-                <a href="">Campeonato</a>
-                <a href="">Resultados</a>
-                <a href="">Notícias</a>
+                <a href="#">Inicio</a>
+                <a href="#">Horários</a>
+                <a href="#">Campeonato</a>
+                <a href="#">Resultados</a>
+                <a href="#">Notícias</a>
             </nav>
-            <a onclick="mostrarMenu()" class="barras" href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></a>
+            <a onclick="mostrarMenuJquery()" class="barras" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></a>
         </div>
    </HEader>
-   <section class="banner">
+   <section class="banner banner-f1">
     <div class="container_grid posicao_texto">
         <div class="texto_banner">
             <span>Liga E-Players</span>
             <p>O maior portal de campeonatos online</p>
-            <a href="">Inscreva-se</a>
+            <a href="#">Inscreva-se</a>
         </div>
     </div>
    </section>
@@ -47,66 +49,20 @@
 <section class="ofertas">
     <div class="container_grid">
         <h2>Ofertas</h2>
-        <div class="secao_cards">
-            <div class="card">
-                <img src="./img/T1 1.png" alt="">
-                <h3>Titulo do jogo</h3>
-                <p>Descrição do jogo</p>
-                <p>R$100,00</p>
-                <a href="">Comprar</a>
-            </div>
-            <div class="card">
-                <img src="./img/T1 1.png" alt="">
-                <h3>Titulo do jogo</h3>
-                <p>Descrição do jogo</p>
-                <p>R$100,00</p>
-                <a href="">Comprar</a>
-            </div>
-            <div class="card">
-                <img src="./img/T1 1.png" alt="">
-                <h3>Titulo do jogo</h3>
-                <p>Descrição do jogo</p>
-                <p>R$100,00</p>
-                <a href="">Comprar</a>
-            </div>
-            <div class="card">
-                <img src="./img/T1 1.png" alt="">
-                <h3>Titulo do jogo</h3>
-                <p>Descrição do jogo</p>
-                <p>R$100,00</p>
-                <a href="">Comprar</a>
-            </div>
-            <div class="card">
-                <img src="./img/T1 1.png" alt="">
-                <h3>Titulo do jogo</h3>
-                <p>Descrição do jogo</p>
-                <p>R$100,00</p>
-                <a href="">Comprar</a>
-            </div>
-            <div class="card">
-                <img src="./img/T1 1.png" alt="">
-                <h3>Titulo do jogo</h3>
-                <p>Descrição do jogo</p>
-                <p>R$100,00</p>
-                <a href="">Comprar</a>
-            </div>
-            <div class="card">
-                <img src="./img/T1 1.png" alt="">
-                <h3>Titulo do jogo</h3>
-                <p>Descrição do jogo</p>
-                <p>R$100,00</p>
-                <a href="">Comprar</a>
-            </div>
-            <div class="card">
-                <img src="./img/T1 1.png" alt="">
-                <h3>Titulo do jogo</h3>
-                <p>Descrição do jogo</p>
-                <p>R$100,00</p>
-                <a href="">Comprar</a>
-            </div>
+        <div id="secao_produtos" class="secao_cards">
+            
         </div>
     </div>
 
+</section>
+<section class="section_ligas">
+    <div class="container_grid box_ligas">
+        <div class="liga_texto">
+            <h2>Como participar das ligas?</h2>
+            <p>Você pode participar das ligas se inscrevendo da seguinte forma: utilizando seu email e celular e cadastrando-se como membro.</p>
+        </div>
+        <img src="./img/league-of-legends-champions-png 1.png" alt="">
+    </div>
 </section>
 
 <footer>
@@ -115,20 +71,20 @@
             <div>
                 <h2>Links Úteis</h2>
                 <ul>
-                    <li><a href="">Regras de utilização</a></li>
-                    <li><a href="">Suporte</a></li>
-                    <li><a href="">Central de ajuda</a></li>
-                    <li><a href="">Contato</a></li>
+                    <li><a href="#">Regras de utilização</a></li>
+                    <li><a href="#">Suporte</a></li>
+                    <li><a href="#">Central de ajuda</a></li>
+                    <li><a href="#">Contato</a></li>
                 </ul>
             </div>
             <div>
                 <h2>Páginas</h2>
                 <ul>
-                    <li><a href="">Início</a></li>
-                    <li><a href="">Campeonatos</a></li>
-                    <li><a href="">Resultados</a></li>
-                    <li><a href="">Notícias</a></li>
-                    <li><a href="">Login/Cadastro</a></li>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Campeonatos</a></li>
+                    <li><a href="#">Resultados</a></li>
+                    <li><a href="#">Notícias</a></li>
+                    <li><a href="#">Login/Cadastro</a></li>
                 </ul>
             </div>
         </div>
@@ -144,15 +100,15 @@
             </form>
             <div class="siga-nos">
                 <h2>Siga-nos em:</h2>
-                <a href=""><img src="./img/instagram 1.png" alt="logo do instagram"></a>
-                <a href=""><img src="./img/facebook 1.png" alt="logo do facebook"></a>
-                <a href=""><img src="./img/youtube.png" alt="logo do youtube"></a>
+                <a href="#"><img src="./img/instagram 1.png" alt="logo do instagram"></a>
+                <a href="#"><img src="./img/facebook 1.png" alt="logo do facebook"></a>
+                <a href="#"><img src="./img/youtube.png" alt="logo do youtube"></a>
             </div>
         </div>
     </div>
 </footer>
 
-<script>
+<!--script>
     let menu = document.getElementById('menu')
 
 function mostrarMenu() {
@@ -163,7 +119,7 @@ function mostrarMenu() {
   }
   event.preventDefault()
 }
-</script>
+</script>-->
 
 </body>
 </html>
